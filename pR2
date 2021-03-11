@@ -1,6 +1,6 @@
 # pseudo R-squared
-pR2 <- function(actual, predicted){
-  1 - sum((predicted - actual)**2) / sum((actual - mean(actual))**2)
+pR2 <- function(observed, predicted){
+  1 - sum((predicted - observed)**2) / sum((observed - mean(observed))**2)
 }
-# actual: observed numeric vector
-# predicted: predicted numeric vector, where each element in the vector is a prediction for the corresponding element in actual
+# observed: observed numeric vector
+# predicted: predicted numeric vector, where each element in the vector is a prediction for the corresponding element in observed
